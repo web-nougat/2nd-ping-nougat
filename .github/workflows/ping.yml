@@ -1,4 +1,4 @@
-name: Ping Website Every 12 Minutes
+name: Ping Website Every 6 Minutes
 
 on:
   schedule:
