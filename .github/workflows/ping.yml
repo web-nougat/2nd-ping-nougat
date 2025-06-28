@@ -1,9 +1,14 @@
-name: Ping Website Every 6 Minutes
+name: Ping Website Every 10 Minutes From 6 AM
 
 on:
   schedule:
-    - cron: "*/6 * * * *"  # Every 12 minutes
-  workflow_dispatch:        # Allow manual trigger
+    - cron: '0 6-23 * * *'   # 6:00 to 23:00 every hour, minute 0
+    - cron: '10 6-23 * * *'  # minute 10 past each hour
+    - cron: '20 6-23 * * *'
+    - cron: '30 6-23 * * *'
+    - cron: '40 6-23 * * *'
+    - cron: '50 6-23 * * *'
+  workflow_dispatch:         # Allow manual trigger
 
 jobs:
   ping:
